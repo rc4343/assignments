@@ -26,7 +26,6 @@ header {
 
 header h1 {
     text-align: center;
-    margin: 0;
     font-size: 36px;
     font-weight: 700;
 }
@@ -45,6 +44,7 @@ header h1 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+  
   
   .menu a {
     color: black;
@@ -134,3 +134,48 @@ footer {
         font-size: 20px;
     }
 }
+#myheader {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    text-align: center;
+  }
+  
+  #myheader:first-of-type {    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup 7s infinite;
+  }
+  
+  #myheader:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  #myheader:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:355px;}
+  }
