@@ -1,15 +1,41 @@
 
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+/*max-height: ;*/
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 10;
     background-color: #f5f5f5;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 20 20px;
 }
 .container2{
     word-spacing: 5px;
@@ -24,6 +50,26 @@ header {
     padding: 20px 0;
 }
 
+#aboutme {
+  width:100%;
+  overflow:hidden;
+}
+#aboutme {
+  animation: slide-left 10s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 header h1 {
     text-align: center;
     font-size: 36px;
@@ -32,13 +78,13 @@ header h1 {
 
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    position:absolute;
+    display:inline-block;
   }
   
   .menu {
     display: none;
-    position: absolute;
+    position:relative;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -59,23 +105,8 @@ header h1 {
   
   .dropdown:hover .menubtn {background-color: #565756;}
 
-section {
-    padding: 50px 0;
-}
-
-.section {
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 700;
-    color: #333;
-}
-
 ul .menu{
-    list-style-type: none;
+    list-style-type:none;
     padding: 0;
 }
 
@@ -86,6 +117,19 @@ ul .menu li {
     color: #333;
 } 
 
+
+.container2 h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fbfbfb;
+}
+
+.container4 h2 {
+    color:#fff;
+}
+
+
 .experience {
     margin-bottom: 30px;
 }
@@ -94,7 +138,7 @@ ul .menu li {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 700;
-    color: #333;
+    color: #3b3a3a;
 }
 
 footer {
@@ -141,11 +185,8 @@ footer {
     text-align: center;
   }
   
-  #myheader:first-of-type {    /* For increasing performance 
-                         ID/Class should've been used. 
-                         For a small demo 
-                         it's okaish for now */
-    animation: showup 7s infinite;
+  #myheader:first-of-type {   
+    animation: showup 7s normal;
   }
   
   #myheader:last-of-type {
@@ -162,7 +203,7 @@ footer {
       0% {opacity:0;}
       20% {opacity:1;}
       80% {opacity:1;}
-      100% {opacity:0;}
+      100% {opacity:1;}
   }
   
   @keyframes slidein {
@@ -173,9 +214,49 @@ footer {
   }
   
   @keyframes reveal {
-      0% {opacity:0;width:0px;}
+      0% {opacity:1;width:0px;}
       20% {opacity:1;width:0px;}
       30% {width:355px;}
       80% {opacity:1;}
       100% {opacity:0;width:355px;}
   }
+
+  .container {
+    width:100%;
+    overflow:hidden;
+  }
+  .container p {
+    animation: slide-right 10s;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-right: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.container2 {
+  text-align:center;
+  overflow:hidden;
+}
+.container2 p {
+  animation: 10s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}

@@ -78,7 +78,7 @@ transform-origin: right center;
 background: linear-gradient(to left, white 70%, #b9b0b0);
 width: 100vw;
 height: 300px;
-transform: translateX(50%) rotateY(-65deg);
+transform: translateX(-50%) rotateY(-65deg);
 transform-origin: left center;
 }
 
