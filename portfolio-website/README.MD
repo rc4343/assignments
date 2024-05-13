@@ -22,8 +22,8 @@ This is a responsive and visually appealing portfolio website built using HTML, 
 
 1. Clone the repository or download the ZIP file:
 
-   ```bash
-   git clone https://github.com/rc4343/portfolio-website.git
+bash
+   git clone https://github.com/rc4343/assignments/tree/main/portfolio-website
 
 Open the project folder in your preferred code editor.
 Replace the placeholder background image URLs in the CSS file (styles.css) with the paths to your actual background image files.
