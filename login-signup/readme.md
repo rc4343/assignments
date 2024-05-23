@@ -40,7 +40,7 @@ This project is a comprehensive web application that combines a user authenticat
 #### Task Organization
 
 - **Show/Hide Completed Tasks**: Users can toggle the visibility of completed tasks using the "Show completed tasks" checkbox, allowing them to focus on either pending or completed tasks.
-- **Sort Tasks**: Users can sort tasks by relevance (alphabetical order) or date/time using the "Sort by" dropdown, enabling better organization and prioritization of tasks.
+- **Sort Tasks**: Users can sort tasks by relevance (alphabe@tical order) or date/time using the "Sort by" dropdown, enabling better organization and prioritization of tasks.
 ![App2](images/5.png)
 #### Data Persistence
 
@@ -76,3 +76,14 @@ This project is a comprehensive web application that combines a user authenticat
 13. Your tasks and user data will be securely stored in the browser's localStorage, allowing you to access them even after refreshing or closing the browser.
 
 Note: This project utilizes the browser's localStorage to store user data and tasks. The data will be cleared if the browser's cache is cleared or if the user switches to a different browser or device.
+
+## References
+
+### Harvard Style Referencing
+- LakshayD02 (2023) Signup-Login-Form-with-Validation [Source code]. https://github.com/LakshayD02/Signup-Login-Form-with-Validation [Accessed 18-05-24].
+
+- World Wide Web Consortium (W3C) (2018) CSS Basic User Interface Module Level 3 (CSS3 UI). Available at: https://www.w3.org/TR/css-ui-3/#icon-notation [Accessed: 19-05-2024].
+
+- Shay Howe (n.d.) Responsive Web Design. Available at: https://learn.shayhowe.com/advanced-html-css/responsive-web-design/ [Accessed: 18-05-24].
+
+- Traversy Media (2021) Build a Todo App With JavaScript [Online video]. Available from https://www.youtube.com/watch?v=3OqWCGVaOkA [Accessed 21-05-24].
