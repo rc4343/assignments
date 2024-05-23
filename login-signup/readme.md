@@ -7,7 +7,7 @@ This project is a comprehensive web application that combines a user authenticat
 ### Authentication System
 
 #### Sign Up Page
-![Signup Page](1.png)
+![Signup Page](images/1.png)
 - **Input Validation**: The sign-up form enforces strict validation rules for all input fields, ensuring data integrity and preventing invalid entries.
 - **Name Validation**: The user's name must be at least 4 characters long.
 - **Email Validation**: The email address must follow a valid format.
@@ -20,9 +20,9 @@ This project is a comprehensive web application that combines a user authenticat
 - **Password Strength Meter**: A visual indicator displays the strength of the user's chosen password, encouraging the use of strong and secure passwords.
 - **User Data Storage**: Upon successful sign-up, the user's data (name, email, and password) is securely stored in the browser's localStorage for future authentication.
 - **Success Message**: After a successful sign-up, a success message is displayed to the user.
-![Signup Success](2.png)
+![Signup Success](images/2.png)
 #### Login Page
-![Login Page](3.png)
+![Login Page](images/3.png)
 - **Email and Password Validation**: The login form validates the user's email and password inputs. The email must follow a valid format, and the password must meet the required length.
 - **Error Handling**: If the user enters invalid credentials, appropriate error messages are displayed to guide the user in correcting the input.
 - **User Authentication**: Upon form submission, the entered credentials are checked against the user data stored in the browser's localStorage. If a match is found, the user is authenticated and redirected to the Todo App.
@@ -36,12 +36,12 @@ This project is a comprehensive web application that combines a user authenticat
 - **Edit Tasks**: Users can edit existing tasks by clicking the edit icon (pencil symbol) next to the task. This will reveal an input field where the user can modify the task text.
 - **Delete Tasks**: Users can delete tasks by clicking the delete icon (cross symbol) next to the task.
 - **Mark Tasks as Completed**: Users can mark tasks as completed by clicking on the task text itself. Completed tasks will be visually distinguished from incomplete tasks.
-![App](4.png)
+![App](images/4.png)
 #### Task Organization
 
 - **Show/Hide Completed Tasks**: Users can toggle the visibility of completed tasks using the "Show completed tasks" checkbox, allowing them to focus on either pending or completed tasks.
 - **Sort Tasks**: Users can sort tasks by relevance (alphabetical order) or date/time using the "Sort by" dropdown, enabling better organization and prioritization of tasks.
-![App2](5.png)
+![App2](images/5.png)
 #### Data Persistence
 
 - **Local Storage**: Task data is securely stored in the browser's localStorage, ensuring that tasks persist even after refreshing or closing the browser.
