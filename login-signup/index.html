@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <nav class="active">
+        <a href="index.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+  <div id="container">
+    <div id="login-form">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="loginEmail" required>
+        <span id="loginEmailError" class="error"></span>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <span id="loginPasswordError" class="error"></span>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <div id="successMessage" ></div>
+
+  <script src="login.js"></script>
+</body>
+</html>
